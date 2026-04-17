@@ -56,5 +56,8 @@
 
     <a class="btn" th:href="@{/products}">← 상품 목록으로 돌아가기</a>
 
+    <footer style="margin-top: 40px; padding: 16px; border-top: 1px solid #ddd; color: #666; font-size: 0.9em;">
+        <p th:text="${'실습 수행: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2371390 | 성명: 박제준'}"></p>
+    </footer>
 </body>
 </html>
